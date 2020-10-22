@@ -6,7 +6,7 @@
         </div><!-- slim-header-left -->
         <div class="slim-header-right">
          
-		<div class="search-box">
+	<!--	<div class="search-box">
             <input type="text" class="form-control" placeholder="Search">
             <button class="btn btn-primary"><i class="fa fa-search"></i></button>
           </div><!-- search-box -->

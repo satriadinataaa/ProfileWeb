@@ -31,19 +31,20 @@
             <div class="col-sm-6 col-md-5 mg-t-20 mg-md-t-0">
               <h3>Get In Touch With Me</h3>
               <a class="btn btn-outline-primary active btn-block mg-b-10" href="<?= base_url()?>assets/Home/folder/CV.pdf" download>Download My CV</a>
-              <a href="#" class="btn btn-outline-primary btn-icon"><div><i class="fa fa-facebook"></i></div></a>
-              <a href="#" class="btn btn-outline-info btn-icon"><div><i class="fa fa-github"></i></div></a>
-              <a href="#" class="btn btn-outline-info btn-icon"><div><i class="fa fa-instagram"></i></div></a>
+              <a href="https://www.facebook.com/Satriadinataa/  " class="btn btn-outline-primary btn-icon"><div><i class="fa fa-facebook"></i></div></a>
+              <a href="https://github.com/satriadinataaa" class="btn btn-outline-info btn-icon"><div><i class="fa fa-github"></i></div></a>
+              <a href="https://www.instagram.com/satriadinataaa/" class="btn btn-outline-info btn-icon"><div><i class="fa fa-instagram"></i></div></a>
+              <a href="https://wa.me/6281368308110?text=Hi%20Satria,%20saya%20telah%20melihat%20websitemu%20dan%20tertarik%20untuk%20menghubungimu" class="btn btn-outline-info btn-icon"><div><i class="fa fa-whatsapp"></i></div></a>
               <div class="card-contact mt-2">
                  
 
                   <p class="contact-item">
                     <span>Phone:</span>
-                    <span>+62 81368308110</span>
+                    <span><a href="tel:081368308110">+62 81368308110</a></span>
                   </p><!-- contact-item -->
                   <p class="contact-item">
                     <span>Email:</span>
-                    <a href="">person1@domain.com</a>
+                    <a href="mailto:satriadinata2@gmail.com">satriadinata2@gmail.com</a>
                   </p><!-- contact-item -->
                  
                   <p class="contact-item">
@@ -119,19 +120,20 @@
               <div class="card-body">
               <h3>Get In Touch With Me</h3>
               <a class="btn btn-outline-primary active btn-block mg-b-10" href="<?= base_url()?>assets/Home/folder/CV.pdf" download>Download My CV</a>
-              <a href="#" class="btn btn-outline-primary btn-icon"><div><i class="fa fa-facebook"></i></div></a>
-              <a href="#" class="btn btn-outline-info btn-icon"><div><i class="fa fa-github"></i></div></a>
-              <a href="#" class="btn btn-outline-info btn-icon"><div><i class="fa fa-instagram"></i></div></a>
+              <a href="https://www.facebook.com/Satriadinataa/" class="btn btn-outline-primary btn-icon"><div><i class="fa fa-facebook"></i></div></a>
+              <a href="https://github.com/satriadinataaa" class="btn btn-outline-info btn-icon"><div><i class="fa fa-github"></i></div></a>
+              <a href="https://www.instagram.com/satriadinataaa/" class="btn btn-outline-info btn-icon"><div><i class="fa fa-instagram"></i></div></a>
+              <a href="https://wa.me/6281368308110?text=Hi%20Satria,%20saya%20telah%20melihat%20websitemu%20dan%20tertarik%20untuk%20menghubungimu" class="btn btn-outline-info btn-icon"><div><i class="fa fa-whatsapp"></i></div></a>
               <div class="card-contact mt-2">
                  
 
-                  <p class="contact-item">
+              <p class="contact-item">
                     <span>Phone:</span>
-                    <span>+62 81368308110</span>
+                    <span><a href="tel:081368308110">+62 81368308110</a></span>
                   </p><!-- contact-item -->
                   <p class="contact-item">
                     <span>Email:</span>
-                    <a href="">person1@domain.com</a>
+                    <a href="mailto:satriadinata2@gmail.com">satriadinata2@gmail.com</a>
                   </p><!-- contact-item -->
                  
                   <p class="contact-item mb-2">
