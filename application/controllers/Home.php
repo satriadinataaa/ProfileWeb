@@ -10,30 +10,21 @@ class Home extends MY_Controller
         $this->load->library('session');
         $this->module = 'home';
 
-        $this->load->model('M_Whatsapp');
-        $this->data['wa'] = M_Whatsapp::first();
 	}
 
 	public function index()
 	{
-        $this->load->model('M_Carousel');
-        $this->load->model('M_KataMutiara');
-        $this->load->model('M_Berita');
-        $this->load->model('M_Marquee');
-        $this->data['carousel'] = M_Carousel::Orderby('id','desc')->limit(1)->first();
-        if($this->data['carousel']){
-        $this->data['carouselsamping'] = M_Carousel::where('id','!=',$this->data['carousel']->id)->Orderby('id','desc')->get();
-        }
-        else{
-            $this->data['carouselsamping'] = null;
-        }
-        $this->data['katamutiara'] = M_KataMutiara::Orderby('id','desc')->limit(1)->first();
-        //$this->data['katamutiara'] = $data['mutiara'][0]->katamutiara;
-        
-        $this->data['berita'] = M_Berita::Orderby('id','desc')->limit(4)->get();
-        $this->data['marquee'] = M_Marquee::first();
         $this->data['title']  = 'Beranda';
         $this->data['content']   = 'beranda';
+        $this->template($this->data, $this->module);
+    }
+
+    public function Images()
+	{
+        $this->load->model('M_PhotoAndroid');
+        $this->data['photo'] = M_PhotoAndroid::OrderBy('created_at','DESC')->get(); 
+        $this->data['title']  = 'Galeri';
+        $this->data['content']   = 'galeri';
         $this->template($this->data, $this->module);
     }
 

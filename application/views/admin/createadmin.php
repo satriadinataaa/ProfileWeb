@@ -23,7 +23,7 @@
                             <h5>Tambah Admin</h5>
                         </div>
                         <div class="ibox-content">
-                            <?= form_open_multipart('Admin/createAdmin', ['class' => 'form-horizontal']) ?>
+                            <?= form_open_multipart('Admin/', ['class' => 'form-horizontal']) ?>
                                 <div class="form-group">
                                     <label class="col-lg-2 control-label">Nama Admin</label>
                                     <div class="col-lg-10">
@@ -42,17 +42,7 @@
                                         <input type="password" placeholder="Password" name="password" class="form-control"> 
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                        <label class="col-lg-2 control-label">Pilih Cabang</label>
-                                        <div class="col-lg-10">
-                                            <select name="school" class="form-control" required>
-                                                <option disabled selected>Pilih Cabang</option>
-                                                <?php foreach ($school as $pok => $p): ?>
-                                                <option value="<?= $p->id?>"><?= $p->schoolName ?></option>
-                                                <?php endforeach;?>
-                                            </select>
-                                        </div>
-                                    </div>
+                               
                                 <div class="form-group">
                                     <div class="col-lg-offset-2 col-lg-10">
                                         <input type="submit" name="submit" value="Tambah" class="btn btn-sm btn-success">
@@ -72,7 +62,7 @@
                                 <tr>
                                     <th>No</th>
                                     <th>Nama Admin</th>
-                                    <th>Cabang Auladi</th>
+                                    
                                     <th>Username</th>
                                     <th>Action</th>
                                 </tr>
@@ -82,7 +72,7 @@
                                 <tr>
                                     <td><?= $i + 1 ?></td>
                                     <td><?= $row->name ?></td>
-                                    <td><?= $row->schools->schoolName ?></td>
+                                   
                                     <td><?= $row->username ?></td>
                                     <td> <a data-toggle="modal" class="btn btn-warning" onclick="document.getElementById('account_id').value = parseInt(<?= $row->id; ?>)" id="toggle-change-password-<?= $row->nama ?>" href="#modal-form2">Ubah Data Admin</a>
                                      <button  id="swal-6" onclick="hapus('<?= $row->id ?>');" class="btn btn-danger"><i class="fa fa-trash"></i> Hapus</button>
@@ -152,12 +142,12 @@
                 })
                 .then((willDelete) => {
                   if (willDelete) {
-                    $.post('<?php echo base_url(); ?>Admin/createAdmin', {delete: true, id_user: id_user})
+                    $.post('<?php echo base_url(); ?>Admin/', {delete: true, id_user: id_user})
                         .done(function(response) {
                             swal('Admin berhasil dihapus', {
                                 icon: 'success',
                               });
-                            // window.location.href = '<?= base_url('Admin/createAdmin') ?>';
+                            // window.location.href = '<?= base_url('Admin/') ?>';
                             location.reload();
                         });
                   

@@ -8,15 +8,12 @@ class Auth extends MY_Controller
 		//redirect to admin function
 		$this->data['account_id']	= $this->session->userdata('account_id');
 		$this->data['role']	= $this->session->userdata('role');
-		$this->data['school'] = $this->session->userdata('school');
 		if (isset($this->data['account_id']))
 		{
 			if($this->data['role'] == '1'){
 				redirect('Admin');
 			}
-			else if ($this->data['role'] == '2'){
-				redirect('AdminCabang');
-			}	
+		
         }
 	}
 
@@ -37,8 +34,8 @@ class Auth extends MY_Controller
 					'account_id'	=> $account->id,				
 					'username'		=> $account->username,
 					'name'			=> $account->name,
-					'role'			=> $account->role,
-					'school'		=> $account->school
+					'role'			=> $account->role
+					
 				]);
 
 				redirect('Auth/login');

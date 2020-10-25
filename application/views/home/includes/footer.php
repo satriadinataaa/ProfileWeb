@@ -9,6 +9,6 @@
     <script src="<?= base_url()?>assets/Home/lib/popper.js/js/popper.js"></script>
     <script src="<?= base_url()?>assets/Home/lib/bootstrap/js/bootstrap.js"></script>
 
-    <script src="<?= base_url()?>assets/Home/js/slim.js"></script>
+
   </body>
 </html>

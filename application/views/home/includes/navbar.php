@@ -15,5 +15,25 @@
         </div><!-- header-right -->
       </div><!-- container -->
     </div><!-- slim-header -->
+    <div class="slim-navbar">
+      <div class="container">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="icon ion-ios-home-outline"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?= base_url()?>Home/Images">
+              <i class="icon ion-ios-filing-outline"></i>
+              <span>Images</span>
+            </a>
+            
+          </li>
+         
+        </ul>
+      </div><!-- container -->
+    </div><!-- slim-navbar -->
 
    

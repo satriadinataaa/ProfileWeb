@@ -3,9 +3,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
-class M_Pendaftaran extends Eloquent
+class M_PhotoAndroid extends Eloquent
 {
-	protected $table		= 'pendaftaran';
+	protected $table		= 'photoandroid';
     protected $primaryKey	= 'id';
     
+    
+
 }
