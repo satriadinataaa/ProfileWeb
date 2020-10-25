@@ -11,7 +11,7 @@
           <label class="section-title"><h2>Android UI Design</h2></label>
             <div class="row ">
             <?php foreach ($photo as $i => $row): ?>
-              <div class="col-sm-6 col-md-4 mt-5 text-center">
+              <div class="col-sm-6 col-md-4 mt-5 text-center bd">
                 <img src="<?= base_url()?>uploads/photoAndroid/<?= $row->nama_foto?>" class="img-fluid" alt="">
               </div><!-- col -->
               <?php endforeach; ?> 

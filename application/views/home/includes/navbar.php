@@ -19,7 +19,7 @@
       <div class="container">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="<?= base_url()?>">
               <i class="icon ion-ios-home-outline"></i>
               <span>Dashboard</span>
             </a>
