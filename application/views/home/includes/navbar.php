@@ -18,13 +18,18 @@
     <div class="slim-navbar">
       <div class="container">
         <ul class="nav">
-          <li class="nav-item">
+          <li class="nav-item 
+          <?php if($content === 'beranda'){
+            echo "active";
+          }?>">
             <a class="nav-link" href="<?= base_url()?>">
               <i class="icon ion-ios-home-outline"></i>
               <span>Dashboard</span>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item <?php if($content === 'galeri'){
+            echo "active";
+          }?>">
             <a class="nav-link" href="<?= base_url()?>Home/Images">
               <i class="icon ion-ios-filing-outline"></i>
               <span>Images</span>

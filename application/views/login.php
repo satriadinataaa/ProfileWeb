@@ -8,7 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="<?= base_url()?>assets/logo-auladi.png">
+    <link rel="icon" href="<?= base_url()?>assets/logo.png">
     <title>Admin - Auladi</title>
 
     <link href="<?php echo base_url() ?>assets/assetsadmin/css/bootstrap.min.css" rel="stylesheet">
@@ -23,9 +23,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     <div class="middle-box text-center loginscreen animated fadeInDown">
         <div>
-            <div >
+            <div style="padding-bottom:2em">
 
-                <img src="<?= base_url()?>assets/logo-auladi.png" >
+                <img src="<?= base_url()?>assets/logo.png" width="75px"  >
 
             </div>
             <h3>Selamat Datang</h3>
